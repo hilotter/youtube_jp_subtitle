@@ -20,9 +20,7 @@
   const subtitleLabelRegExp = new RegExp(String.raw`${subtitleLabel}`);
   Array.from(document.querySelectorAll(".ytp-menuitem"))
     .filter((item) => {
-      return item
-        .querySelector(".ytp-menuitem-label")
-        .textContent.match(subtitleLabelRegExp);
+      return item.querySelector(".ytp-menuitem-label").textContent.match(subtitleLabelRegExp);
     })[0]
     .click();
   await sleep(500);
@@ -32,10 +30,7 @@
 
   Array.from(document.querySelectorAll(".ytp-menuitem"))
     .filter((item) => {
-      return (
-        item.querySelector(".ytp-menuitem-label").textContent ===
-        subtitleLanguage
-      );
+      return item.querySelector(".ytp-menuitem-label").textContent === subtitleLanguage;
     })[0]
     .click();
 })();
