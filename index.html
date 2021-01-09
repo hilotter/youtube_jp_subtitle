@@ -50,7 +50,7 @@
               </div>
               <div class="flex justify-center mt-8">
                 <img
-                  class="w-full max-w-xl"
+                  class="object-contain w-full max-w-xl"
                   src="https://hilotter.github.io/youtube_jp_subtitle/images/youtube_subtitle.gif"
                   alt="subtitle swiching"
                 />
@@ -58,112 +58,10 @@
             </div>
             <div class="mt-6">
               <div class="flex flex-col">
-                <div class="py-6">
-                  <div>
-                    <h2 class="font-bold">STEP 1</h2>
-                    <p class="mt-1">PCの場合</p>
-                    <p class="mt-1">↓のリンクをブックマークバーにドラッグ＆ドロップします</p>
-                    <p class="mt-1">
-                      <a
-                        class="text-blue-300 underline"
-                        href="javascript:(function(d,j,s){s=d.createElement('script');s.src=j;d.body.appendChild(s);})(document,'https://hilotter.github.io/youtube_jp_subtitle/bookmarklet/subtitle.js');"
-                      >
-                        YoutubeJPSubtitle
-                      </a>
-                    </p>
-                    <p class="mt-6">Mobileの場合</p>
-                    <p class="mt-1">
-                      このサイトをブックマークしたあと、↓のコードをブックマークURLとして上書き保存します
-                    </p>
-                    <p class="flex mt-2">
-                      <input
-                        id="bookmarkletCode"
-                        type="text"
-                        class="w-full px-2 py-1 text-gray-800 rounded focus:outline-none"
-                        value="javascript:(function(d,j,s){s=d.createElement('script');s.src=j;d.body.appendChild(s);})(document,'https://hilotter.github.io/youtube_jp_subtitle/bookmarklet/subtitle.js');"
-                      />
-                      <button class="px-4 ml-1 text-gray-800 bg-gray-200 rounded" onclick="copyToClipBoard()">
-                        Copy
-                      </button>
-                    </p>
-                  </div>
-                </div>
-                <div class="flex items-center justify-center flex-1">
-                  <svg
-                    class="w-8 h-8 text-gray-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-                    />
-                  </svg>
-                </div>
-                <div class="py-6">
-                  <h2 class="font-bold">STEP 2</h2>
-                  <p class="mt-1">YouTube動画を開きます</p>
-                  <p class="mt-1 break-all">
-                    Sample:「
-                    <a
-                      class="text-blue-300 underline"
-                      href="https://youtu.be/dXQ7IHkTiMM"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Figma For Beginners: Explore ideas (1/4)
-                    </a>
-                    」
-                  </p>
-                </div>
-                <div class="flex items-center justify-center flex-1">
-                  <svg
-                    class="w-8 h-8 text-gray-200"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
-                    />
-                  </svg>
-                </div>
-                <div class="py-6">
-                  <h2 class="font-bold">STEP 3</h2>
-                  <p class="mt-1">ブックマークレットをクリックすると日本語字幕に切り替わります</p>
-                </div>
-                <div class="pt-12">
-                  <h2 class="font-bold">動作確認済み環境</h2>
-                  <p class="mt-1">
-                    <svg
-                      class="inline w-4 h-4 text-gray-200 align-middle"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                      />
-                    </svg>
-                    <span class="ml-1">Chrome(Mac)</span>
-                  </p>
-                </div>
-                <div class="pt-12">
-                  <h2 class="font-bold">注意事項</h2>
-                  <ul class="list-none">
-                    <li class="mt-1">
+                <div class="pt-6">
+                  <h3 class="font-bold">動作確認済み環境</h3>
+                  <p class="py-1 mt-1">
+                    <a href="#pc">
                       <svg
                         class="inline w-4 h-4 text-gray-200 align-middle"
                         xmlns="http://www.w3.org/2000/svg"
@@ -175,11 +73,55 @@
                           stroke-linecap="round"
                           stroke-linejoin="round"
                           stroke-width="2"
-                          d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                          d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
-                      <span class="ml-1">ブックマークレットはYouTube上の動画にのみ対応しています</span>
-                    </li>
+                      <span class="ml-1 underline">Chrome(Mac 10.15)</span>
+                    </a>
+                  </p>
+                  <p class="py-1 mt-1">
+                    <a href="#android">
+                      <svg
+                        class="inline w-4 h-4 text-gray-200 align-middle"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                        />
+                      </svg>
+                      <span class="ml-1 underline">Chrome(Android 11)</span>
+                    </a>
+                  </p>
+                  <p class="py-1 mt-1">
+                    <a href="#ios">
+                      <svg
+                        class="inline w-4 h-4 text-gray-200 align-middle"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                        />
+                      </svg>
+                      <span class="ml-1 underline">Safari(iOS 14)</span>
+                    </a>
+                  </p>
+                </div>
+
+                <div class="pt-6">
+                  <h3 class="font-bold">注意事項</h3>
+                  <ul class="list-none">
                     <li class="mt-2">
                       <svg
                         class="inline w-4 h-4 text-gray-200 align-middle"
@@ -212,26 +154,327 @@
                           d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
                         />
                       </svg>
-                      <span class="ml-1">連続再生には対応していません</span>
-                    </li>
-                    <li class="mt-2">
-                      <svg
-                        class="inline w-4 h-4 text-gray-200 align-middle"
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                        />
-                      </svg>
                       <span class="ml-1">動画が切り替わる度にブックマークレットを実行する必要があります</span>
                     </li>
                   </ul>
+                </div>
+
+                <div class="pt-12">
+                  <h2 id="pc" class="text-xl font-bold text-center">PCの場合</h2>
+                  <div class="mt-2">
+                    <h3 class="font-bold">STEP 1</h3>
+                    <p class="mt-1">↓のリンクをブックマークバーにドラッグ＆ドロップします</p>
+                    <p class="mt-1">
+                      <a
+                        class="text-blue-300 underline"
+                        href="javascript:(function(d,j,s){s=d.createElement('script');s.src=j;d.body.appendChild(s);})(document,'https://hilotter.github.io/youtube_jp_subtitle/bookmarklet/subtitle.js');"
+                      >
+                        YoutubeJPSubtitle
+                      </a>
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 2</h3>
+                    <p class="mt-1">YouTube動画を開きます</p>
+                    <p class="mt-1 break-all">
+                      Sample:「
+                      <a
+                        class="text-blue-300 underline"
+                        href="https://youtu.be/dXQ7IHkTiMM"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Figma For Beginners: Explore ideas (1/4)
+                      </a>
+                      」
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 3</h3>
+                    <p class="mt-1">ブックマークレットをクリックすると日本語字幕に切り替わります</p>
+                  </div>
+                </div>
+
+                <div class="pt-12">
+                  <h2 id="android" class="text-xl font-bold text-center">Androidの場合</h2>
+                  <div class="mt-2">
+                    <h3 class="font-bold">STEP 1</h3>
+                    <p class="mt-1">
+                      このサイトをブックマークしたあと、↓のコードをブックマークURLとして上書き保存します
+                    </p>
+                    <p class="mt-1">ブックマーク名を「bmlYouTubeJPSubtitle」に設定してください</p>
+                    <p class="flex mt-2">
+                      <input
+                        id="bookmarkletForAndroid"
+                        readonly
+                        type="text"
+                        class="w-full px-2 py-1 text-gray-800 rounded focus:outline-none"
+                        value="javascript:(function(d,j,s){s=d.createElement('script');s.src=j;d.body.appendChild(s);})(document,'https://hilotter.github.io/youtube_jp_subtitle/bookmarklet/subtitle.js');"
+                      />
+                      <button
+                        class="px-4 ml-1 text-gray-800 bg-gray-200 rounded"
+                        onclick="copyToClipBoard('bookmarkletForAndroid')"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 2</h3>
+                    <p class="mt-1">YouTube動画を開きます</p>
+                    <p class="mt-1 break-all">
+                      Sample:「
+                      <a
+                        class="text-blue-300 underline"
+                        href="https://youtu.be/dXQ7IHkTiMM"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Figma For Beginners: Explore ideas (1/4)
+                      </a>
+                      」
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 3</h3>
+                    <p class="mt-1">URLバーに「bmlYouTubeJPSubtitle」を入力し、ブックマークレットをタップします</p>
+                  </div>
+                </div>
+
+                <div class="pt-12">
+                  <h2 id="ios" class="text-xl font-bold text-center">iOSの場合</h2>
+                  <div class="mt-2">
+                    <h3 class="font-bold">STEP 1</h3>
+                    <p class="mt-1">
+                      このサイトをブックマークしたあと、↓のコードをブックマークURLとして上書き保存します
+                    </p>
+                    <p class="flex mt-2">
+                      <input
+                        id="bookmarkletForIos"
+                        readonly
+                        type="text"
+                        class="w-full px-2 py-1 text-gray-800 rounded focus:outline-none"
+                        value="javascript:(function(d,j,s){s=d.createElement('script');s.src=j;d.body.appendChild(s);})(document,'https://hilotter.github.io/youtube_jp_subtitle/bookmarklet/subtitle.js');"
+                      />
+                      <button
+                        class="px-4 ml-1 text-gray-800 bg-gray-200 rounded"
+                        onclick="copyToClipBoard('bookmarkletForIos')"
+                      >
+                        Copy
+                      </button>
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 2</h3>
+                    <p class="mt-1">YouTube動画を開きます</p>
+                    <p class="mt-1 break-all">
+                      Sample:「
+                      <a
+                        class="text-blue-300 underline"
+                        href="https://youtu.be/dXQ7IHkTiMM"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Figma For Beginners: Explore ideas (1/4)
+                      </a>
+                      」
+                    </p>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 3</h3>
+                    <p class="mt-1">画面右上の「︙」をタップし「パソコン版」をタップします</p>
+                    <div class="flex justify-center mt-8">
+                      <img class="object-contain w-full max-w-sm" src="/images/ios1.jpg" alt="change pc site by menu" />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 4</h3>
+                    <p class="mt-1">
+                      URLバー左端の「大小」ボタンをタップし「デスクトップ用Webサイトを表示」をタップします
+                    </p>
+                    <div class="flex justify-center mt-8">
+                      <img class="object-contain w-full max-w-sm" src="/images/ios2.jpg" alt="change pc site by menu" />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 5</h3>
+                    <p class="mt-1">動画下部に「字幕アイコン」と「設定アイコン」が表示されていることを確認します</p>
+                    <div class="flex justify-center mt-8">
+                      <img class="object-contain w-full max-w-sm" src="/images/ios3.jpg" alt="change pc site by menu" />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 6</h3>
+                    <p class="mt-1">ブックマーク一覧を開いてブックマークレットをブックマークレットをタップします</p>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 7</h3>
+                    <p class="mt-1">動画を再生すると全画面表示で再生されますが、全画面の場合は字幕が表示されません</p>
+                    <p class="mt-1">2本指でピンチインを行い通常画面に戻すと日本語字幕が表示されます</p>
+                    <div class="flex justify-center mt-8">
+                      <img class="object-contain w-full max-w-sm" src="/images/ios4.jpg" alt="change pc site by menu" />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -241,8 +484,8 @@
     </div>
 
     <script type="text/javascript">
-      const copyToClipBoard = () => {
-        let textarea = document.getElementById("bookmarkletCode");
+      const copyToClipBoard = (id) => {
+        let textarea = document.getElementById(id);
         textarea.select();
         document.execCommand("copy");
       };
