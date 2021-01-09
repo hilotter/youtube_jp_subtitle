@@ -282,6 +282,9 @@
                       </a>
                       」
                     </p>
+                    <p class="mt-1">
+                      YouTubeアプリをインストール済みの場合アプリが起動するため、リンクを長押しして「リンクアドレスをコピー」しブラウザのURLバーに貼り付けてください
+                    </p>
                   </div>
                   <div class="flex items-center justify-center flex-1 mt-4">
                     <svg
@@ -301,7 +304,71 @@
                   </div>
                   <div class="mt-4">
                     <h3 class="font-bold">STEP 3</h3>
-                    <p class="mt-1">URLバーに「bmlYouTubeJPSubtitle」を入力し、ブックマークレットをタップします</p>
+                    <p class="mt-1">画面右上の「︙」をタップし「パソコン版」を長押しします</p>
+                    <div class="mt-8">
+                      <img
+                        class="block w-full max-w-sm mx-auto"
+                        src="https://hilotter.github.io/youtube_jp_subtitle/images/android1.jpg"
+                        alt="change pc site by menu"
+                      />
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 4</h3>
+                    <p class="mt-1">「リンクアドレスをコピー」しURLバーに貼り付けてください</p>
+                    <div class="mt-8">
+                      <img
+                        class="block w-full max-w-sm mx-auto"
+                        src="https://hilotter.github.io/youtube_jp_subtitle/images/android2.jpg"
+                        alt="change pc site by menu"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="flex items-center justify-center flex-1 mt-4">
+                    <svg
+                      class="w-8 h-8 text-gray-200"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="mt-4">
+                    <h3 class="font-bold">STEP 5</h3>
+                    <p class="mt-1">
+                      URLバーに「bmlYouTubeJPSubtitle」と入力し、ブックマークレットをタップすると日本語字幕に切り替わります
+                    </p>
+                    <div class="mt-8">
+                      <img
+                        class="block w-full max-w-sm mx-auto"
+                        src="https://hilotter.github.io/youtube_jp_subtitle/images/android3.jpg"
+                        alt="change pc site by menu"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -501,9 +568,8 @@
 
     <script type="text/javascript">
       const copyToClipBoard = (id) => {
-        let textarea = document.getElementById(id);
-        textarea.select();
-        document.execCommand("copy");
+        const textarea = document.getElementById(id);
+        navigator.clipboard.writeText(textarea.value);
       };
     </script>
     <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
