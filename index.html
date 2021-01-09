@@ -60,6 +60,7 @@
                 <div class="py-6">
                   <div>
                     <h2 class="font-bold">STEP 1</h2>
+                    <p class="mt-1">PCの場合</p>
                     <p class="mt-1">↓のリンクをブックマークバーにドラッグ＆ドロップします</p>
                     <p class="mt-1">
                       <a
@@ -68,6 +69,21 @@
                       >
                         YoutubeJPSubtitle
                       </a>
+                    </p>
+                    <p class="mt-6">Mobileの場合</p>
+                    <p class="mt-1">
+                      このサイトをブックマークしたあと、↓のコードをブックマークURLとして上書き保存します
+                    </p>
+                    <p class="flex mt-2">
+                      <input
+                        id="bookmarkletCode"
+                        type="text"
+                        class="w-full px-2 py-1 text-gray-800 rounded focus:outline-none"
+                        value="javascript:(function(d,j,s){s=d.createElement('script');s.src=j;d.body.appendChild(s);})(document,'https://hilotter.github.io/youtube_jp_subtitle/bookmarklet/subtitle.js');"
+                      />
+                      <button class="px-4 ml-1 text-gray-800 bg-gray-200 rounded" onclick="copyToClipBoard()">
+                        Copy
+                      </button>
                     </p>
                   </div>
                 </div>
@@ -223,6 +239,13 @@
       </main>
     </div>
 
+    <script type="text/javascript">
+      const copyToClipBoard = () => {
+        let textarea = document.getElementById("bookmarkletCode");
+        textarea.select();
+        document.execCommand("copy");
+      };
+    </script>
     <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </body>
 </html>
