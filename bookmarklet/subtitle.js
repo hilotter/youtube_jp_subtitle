@@ -1,8 +1,13 @@
 (async () => {
   const subtitleLabel = "字幕";
+  const autoTranslationLabel = "自動翻訳";
   const subtitleLanguage = "日本語";
 
   const sleep = (msec) => new Promise((resolve) => setTimeout(resolve, msec));
+
+  const closeMenu = () => {
+    document.querySelector("#player-container").click();
+  };
 
   const subtitle = document.querySelector(".ytp-subtitles-button");
   if (subtitle.style.display === "none") {
@@ -25,7 +30,27 @@
     .click();
   await sleep(500);
 
-  document.querySelectorAll(".ytp-menuitem")[2].click();
+  const subtitleList = document.querySelectorAll(".ytp-menuitem");
+  const officialJapaneseSubtitle = Array.from(subtitleList).filter((item) => {
+    return item.querySelector(".ytp-menuitem-label").textContent === subtitleLanguage;
+  })[0];
+
+  if (officialJapaneseSubtitle) {
+    officialJapaneseSubtitle.click();
+    closeMenu();
+    return;
+  }
+
+  const autoTranslation = Array.from(subtitleList).filter((item) => {
+    return item.querySelector(".ytp-menuitem-label").textContent === autoTranslationLabel;
+  })[0];
+
+  if (!autoTranslation) {
+    closeMenu();
+    return;
+  }
+
+  autoTranslation.click();
   await sleep(500);
 
   Array.from(document.querySelectorAll(".ytp-menuitem"))
@@ -33,4 +58,5 @@
       return item.querySelector(".ytp-menuitem-label").textContent === subtitleLanguage;
     })[0]
     .click();
+  closeMenu();
 })();
